@@ -1,0 +1,14 @@
+android_app {
+    name: "SingleTapToLock",
+    srcs: [
+        "app/src/main/**/*.java",
+    ],
+    resource_dirs: ["app/src/main/res"],
+    manifest: "app/src/main/AndroidManifest.xml",
+    platform_apis: true,
+    system_ext_specific: true,
+    certificate: "platform",
+    optimize: {
+        enabled: false,
+    },
+}
